@@ -7,14 +7,17 @@
   branch = auto
   interactive = auto
 [alias]
-  ci = commit
   br = branch
-  unpushed = log ORIG_HEAD.. --stat --no-merges
-  llog = log --date=local
+  cancel = reset –soft HEAD^
+  ci = commit
   co = checkout
-  st = status -a
   gr = log --decorate --graph --pretty=oneline --abbrev-commit
-  slog = shortlog -s -n
+  la = log --pretty="format:%ad %h (%an): %s" --date=short
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  llog = log --date=local
+  oneline = log --pretty=oneline
+  slog = shortlog -s -n
+  st = status -a
+  unpushed = log ORIG_HEAD.. --stat --no-merges
 [push]
   default = tracking
