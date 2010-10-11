@@ -2,10 +2,7 @@
   name = Colin Bell
   email = col@baibell.org
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
+  ui = true
 [alias]
   br = branch
   cancel = reset –soft HEAD^
