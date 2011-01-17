@@ -21,6 +21,3 @@
   print = cat-file -p
 [push]
   default = tracking
-[core]
-  autocrlf = input
-  safecrlf = true
