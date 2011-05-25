@@ -16,7 +16,8 @@
   oneline = log --pretty=oneline
   slog = shortlog -s -n
   st = status -a
-  unpushed = log ORIG_HEAD.. --stat --no-merges
+  #unpushed = log ORIG_HEAD..HEAD --stat --no-merges
+  unpushed = log --branches --not --remotes
   type = cat-file -t
   print = cat-file -p
 [push]
