@@ -15,7 +15,7 @@
   llog = log --date=local
   oneline = log --pretty=oneline
   slog = shortlog -s -n
-  st = status -a
+  st = status -sb
   #unpushed = log ORIG_HEAD..HEAD --stat --no-merges
   unpushed = log --branches --not --remotes
   type = cat-file -t
