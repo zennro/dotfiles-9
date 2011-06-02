@@ -22,3 +22,5 @@
   print = cat-file -p
 [push]
   default = tracking
+[http]
+	sslVerify = false
