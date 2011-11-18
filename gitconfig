@@ -23,4 +23,7 @@
 [push]
   default = tracking
 [http]
-	sslVerify = false
+  sslVerify = false
+[diff]
+  # For Github-style word diffs
+  wordRegex = [^[:space:]]
