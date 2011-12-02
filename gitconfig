@@ -12,6 +12,7 @@
   gr = log --decorate --graph --pretty=oneline --abbrev-commit
   la = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lgall = log --all --graph  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   llog = log --date=local
   oneline = log --pretty=oneline
   slog = shortlog -s -n
