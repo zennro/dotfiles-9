@@ -21,6 +21,8 @@
   unpushed = log --branches --not --remotes
   type = cat-file -t
   print = cat-file -p
+  ribbon = tag --force _ribbon origin/master
+  catchup = log --patch --reverse --topo-order _ribbon..origin/master
 [push]
   default = tracking
 [http]
