@@ -1,28 +1,15 @@
 # -*- mode: conf; -*-
+[code]
+  editor=emacsclient
+  pager=less -x2
+
 [user]
   name = Colin Bell
   email = col@baibell.org
+
 [color]
   ui = true
-[alias]
-  br = branch
-  cancel = reset –soft HEAD^
-  ci = commit
-  co = checkout
-  gr = log --decorate --graph --pretty=oneline --abbrev-commit
-  la = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  lgall = log --all --graph  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  llog = log --date=local
-  oneline = log --pretty=oneline
-  slog = shortlog -s -n
-  st = status -sb
-  #unpushed = log ORIG_HEAD..HEAD --stat --no-merges
-  unpushed = log --branches --not --remotes
-  type = cat-file -t
-  print = cat-file -p
-  ribbon = tag --force _ribbon origin/master
-  catchup = log --patch --reverse --topo-order _ribbon..origin/master
+
 [push]
   default = tracking
 [http]
@@ -30,3 +17,28 @@
 [diff]
   # For Github-style word diffs
   wordRegex = [^[:space:]]
+[apply]
+  whitespace = nowarn
+
+[alias]
+  br = branch
+  cancel = reset –soft HEAD^
+  ci = commit
+  co = checkout
+
+  gr = log --decorate --graph --pretty=oneline --abbrev-commit
+  grd = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
+  grr = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
+
+  l       = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
+  ld      = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
+  le      = log --oneline --decorate
+  slog    = shortlog -s -n
+
+  # All commits for a file, pass file name as an argument
+  fl = log -u
+
+  st = status -sb
+  unpushed = log --branches --not --remotes
+  type = cat-file -t
+  print = cat-file -p
