@@ -26,10 +26,9 @@
   ci = commit
   co = checkout
 
-  gr = log --decorate --graph --pretty=oneline --abbrev-commit
-  grd = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
-  grr = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
-
+  gr      = log --decorate --graph --pretty=oneline --abbrev-commit
+  grd     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
+  grr     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
   l       = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
   ld      = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
   le      = log --oneline --decorate
