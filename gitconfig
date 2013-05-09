@@ -45,5 +45,3 @@
   type = cat-file -t
   print = cat-file -p
 
-[pull]
-  rebase = true
