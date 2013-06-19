@@ -45,3 +45,5 @@
   type = cat-file -t
   print = cat-file -p
 
+[branch]
+  autosetuprebase = always
