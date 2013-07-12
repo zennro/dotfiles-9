@@ -1,5 +1,5 @@
 # -*- mode: conf; -*-
-[code]
+[core]
   editor=emacsclient
   pager=less -x2
 
