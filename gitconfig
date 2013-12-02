@@ -44,6 +44,3 @@
   unpushed = log --branches --not --remotes
   type = cat-file -t
   print = cat-file -p
-
-[branch]
-  autosetuprebase = always
