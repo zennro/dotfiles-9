@@ -2,6 +2,8 @@
 [core]
   editor=emacsclient
   pager=less -x2
+  autocrlf = input
+  safecrlf = true
 
 [user]
   name = Colin Bell
@@ -32,6 +34,7 @@
   gr      = log --decorate --graph --pretty=oneline --abbrev-commit
   grd     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
   grr     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
+  hist    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   l       = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
   ld      = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
   le      = log --oneline --decorate
@@ -43,4 +46,4 @@
   st = status -sb
   unpushed = log --branches --not --remotes
   type = cat-file -t
-  print = cat-file -p
+  dump = cat-file -p
