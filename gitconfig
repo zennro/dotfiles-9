@@ -32,11 +32,11 @@
   co = checkout
 
   gr      = log --decorate --graph --pretty=oneline --abbrev-commit
-  grd     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
-  grr     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
+  grd     = log --graph --pretty=format:'%C(auto)%h%Creset - %C(auto)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
+  grr     = log --graph --pretty=format:'%C(auto)%h%Creset - %C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
   hist    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-  l       = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
-  ld      = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
+  l       = log --pretty=format:"%C(auto)%h%C(auto)%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
+  ld      = log --pretty=format:"%C(auto)%h%C(auto)%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
   le      = log --oneline --decorate
   slog    = shortlog -s -n
 
