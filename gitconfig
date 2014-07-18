@@ -25,6 +25,9 @@
 [apply]
   whitespace = nowarn
 
+[commit]
+  template = ~/.gitmessage
+
 [alias]
   br = branch
   cancel = reset –soft HEAD^
