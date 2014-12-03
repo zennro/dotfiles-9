@@ -8,6 +8,7 @@
 [user]
   name = Colin Bell
   email = col@baibell.org
+  signingkey = 02315745
 
 [color]
   ui = true
@@ -31,17 +32,15 @@
 
 [alias]
   br = branch
-  cancel = reset –soft HEAD^
+  cancel = reset --soft HEAD^
   ci = commit
   co = checkout
 
-  gr      = log --decorate --graph --pretty=oneline --abbrev-commit
-  grd     = log --graph --pretty=format:'%C(auto)%h%Creset - %C(auto)%d%Creset %s %Cgreen(%cD) %C(bold blue)[%an]%Creset' --abbrev-commit
-  grr     = log --graph --pretty=format:'%C(auto)%h%Creset - %C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit
-  hist    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  lg      = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lgd     = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --abbrev-commit
   l       = log --pretty=format:"%C(auto)%h%C(auto)%d\\ %Creset%s%Cgreen(%cr)%Cblue[%cn]" --decorate
   ld      = log --pretty=format:"%C(auto)%h%C(auto)%d\\ %Creset%s%Cgreen(%cD)%Cblue[%cn]" --decorate
-  le      = log --oneline --decorate
+  h       = log --oneline --decorate
   slog    = shortlog -s -n
 
   # All commits for a file, pass file name as an argument
