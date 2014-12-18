@@ -23,7 +23,6 @@
   # For Github-style word diffs
   wordRegex = [^[:space:]]
 
-
 [apply]
   whitespace = nowarn
 
