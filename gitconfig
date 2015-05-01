@@ -1,6 +1,6 @@
 # -*- mode: conf; -*-
 [core]
-  editor=emacsclient -nw
+  editor=emacsclient
   pager=less -x2
   autocrlf = input
   safecrlf = true
